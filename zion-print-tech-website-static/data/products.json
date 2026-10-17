@@ -1,0 +1,122 @@
+{
+  "categories": [
+    {
+      "id": "flexographic-printing",
+      "slug": "flexographic-printing",
+      "name": "Flexographic Printing Machinery"
+    },
+    {
+      "id": "pre-production",
+      "slug": "pre-production-machines",
+      "name": "Pre-Production Machines"
+    },
+    {
+      "id": "finishing-processes",
+      "slug": "post-production-machines",
+      "name": "Post-Production Machines"
+    },
+    {
+      "id": "accessories-consumables",
+      "slug": "accessories-consumables",
+      "name": "Accessories & Consumables"
+    }
+  ],
+  "products": [
+    {
+      "slug": "narrow-web-flexo-printing-machine-2-14-colors",
+      "name": "narrow web Flexo Printing Machine 2-14 Colors",
+      "category": "flexographic-printing",
+      "image": "/images/products/fitted/narrow-web-flexo-printing-machine-2-14-colors-v2.png",
+      "features": [
+        "The Narroweb Flexo Printing Machine 2-14-Colors is an advanced fully-servo flexographic press engineered for high-speed multi-color printing on film, paper, and IML packaging substrates.",
+        "Max web width: 320-800 mm",
+        "Max printing width: 320-800 mm",
+        "Color quantity: 2-14 colors"
+      ]
+    },
+    {
+      "slug": "plate-mounting-machine",
+      "name": "Plate Mounting Machine",
+      "category": "pre-production",
+      "image": "/images/products/fitted/plate-mounting-machine.webp",
+      "features": ["High definition dual camera optical alignment", "Motorized plate roller lifting"]
+    },
+    {
+      "slug": "flexo-plate-making-machine",
+      "name": "Plate Masking & Making Machine",
+      "category": "pre-production",
+      "image": "/images/products/fitted/hh-flexo-plate-making-machine.webp",
+      "features": ["All-in-one exposure, washing, drying and debonding", "Diffuse reflection ultraviolet exhaust vacuum film"]
+    },
+    {
+      "slug": "exposure-stickness-removal-machine",
+      "name": "Exposure & Stickness Removal Machine",
+      "category": "pre-production",
+      "image": "/images/products/fitted/exposure-stickness-removal-machine.webp",
+      "features": ["Stainless steel shell structure", "Philips lamps with UVC debonding"]
+    },
+    {
+      "slug": "plate-washing-machine",
+      "name": "Plate Washing Machine",
+      "category": "pre-production",
+      "image": "/images/products/fitted/plate-cleaning-machine.webp",
+      "features": ["Automatic two-stage cleaning", "Circulating liquid filtration"]
+    },
+    {
+      "slug": "dbqx-350-ultrasonic-cleaning-machine",
+      "name": "Ultrasonic Anilox Roller Cleaning Machine",
+      "category": "pre-production",
+      "image": "/images/products/fitted/dbqx-350-ultrasonic-cleaning-machine.png",
+      "features": ["Deep ultrasonic micro-cavitation", "Synchronized motorized roller rotation"]
+    },
+    {
+      "slug": "dbfq-370h-slitting-rewinding-machine",
+      "name": "High Speed Slitting Rewinding Machine",
+      "category": "finishing-processes",
+      "image": "/images/products/fitted/dbfq-370h-slitting-rewinding-machine-v2.png",
+      "features": ["Slitting speed up to 350 m/min", "Full servo motor driven with taper tension control", "Turret type rewinding system"]
+    },
+    {
+      "slug": "dbmq-f320h-flatbed-die-cutting-slitting-machine",
+      "name": "High Speed Flatbed Die Cutting Slitting Machine",
+      "category": "finishing-processes",
+      "image": "/images/products/fitted/dbmq-f320h-flatbed-die-cutting-slitting-machine-v2.png",
+      "features": ["Flatbed die cutting up to 400 strokes/min (140 m/min)", "Precision servo-motor paper feeding", "All-in-one laminating, die cutting, and slitting"]
+    },
+    {
+      "slug": "dbiml-370-semi-rotary-iml-die-cutting-machine",
+      "name": "Semi-rotary IML Die Cutting Machine",
+      "category": "finishing-processes",
+      "image": "/images/products/fitted/dbiml-370-semi-rotary-iml-die-cutting-machine-v2.png",
+      "features": ["Dual mode full-rotary and intermittent semi-rotary", "Designed for In-Mold Labels (IML) and synthetic films", "Running speed up to 120 m/min"]
+    },
+    {
+      "slug": "dbpj-450-automatic-label-inspecting-slitting-machine",
+      "name": "Automatic Label Inspecting And Slitting Machine",
+      "category": "finishing-processes",
+      "image": "/images/products/fitted/dbpj-450-automatic-label-inspecting-slitting-machine.png",
+      "features": ["100% optical inspection detecting defects, bubbles, and overflow", "Inspecting speed up to 180 m/min, slitting up to 350 m/min", "Turret type upper rewinding system"]
+    },
+    {
+      "slug": "cushion-adhesive-mounting-tapes-and-adhesives",
+      "name": "Cushion Adhesive Mounting Tapes & Adhesives (BS MOUNT)",
+      "category": "accessories-consumables",
+      "image": "/images/products/fitted/cushion-mounting-tapes-adhesives-v2.png",
+      "features": ["BiesSse BS MOUNT cushion adhesive tapes", "10 compressibilities & 2 thickness ranges", "Full HD Flexo certified"]
+    },
+    {
+      "slug": "lint-free-cleanroom-wipes",
+      "name": "Lint-Free Cleanroom Wipes",
+      "category": "accessories-consumables",
+      "image": "/images/products/fitted/lint-free-wipes.jpg",
+      "features": ["Ultra-low particle generation", "Resistant to aggressive UV plate washes and solvents"]
+    },
+    {
+      "slug": "polyester-cleanroom-wipes",
+      "name": "Polyester Cleanroom Wipes",
+      "category": "accessories-consumables",
+      "image": "/images/products/fitted/polyester-wipes.jpg",
+      "features": ["100% continuous filament polyester double-knit", "Laser-sealed border edges eliminating loose fibers"]
+    }
+  ]
+}

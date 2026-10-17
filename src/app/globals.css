@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+/* =========================================================
+   ZION PRINT TECH - LIGHT CORPORATE DESIGN SYSTEM
+   Clean, Modern, High-Legibility Light Industrial Theme
+   ========================================================= */
+
+:root {
+  /* ---------- Core Layout Colors ---------- */
+  --background: #ffffff;
+  --foreground: #0f172a;            /* Slate 900: Crisp, high-contrast text */
+
+  /* ---------- Primary: Zion Deep Royal Blue (#0B2076 from Logo) ---------- */
+  --primary: #0b2076;
+  --primary-hover: #081754;
+  --primary-foreground: #ffffff;
+
+  /* ---------- Signature Accent: Z-Purple (#4A1578 from 'Z') ---------- */
+  --brand-purple: #4a1578;
+  --brand-purple-foreground: #ffffff;
+
+  /* ---------- CMYK Process Accents (From Logo Streaks) ---------- */
+  --cmyk-cyan: #0084d6;             /* Top Streak (Cyan) */
+  --cmyk-magenta: #e6007a;          /* Middle Streak (Magenta) */
+  --cmyk-yellow: #ffc700;           /* Lower Streak (Yellow/Gold CTA) */
+  --cmyk-yellow-hover: #e5b200;
+  --cmyk-yellow-foreground: #071329;
+
+  /* ---------- Secondary CTA (Yellow/Amber) ---------- */
+  --secondary: var(--cmyk-yellow);
+  --secondary-hover: var(--cmyk-yellow-hover);
+  --secondary-foreground: var(--cmyk-yellow-foreground);
+
+  /* ---------- Surfaces & Backgrounds ---------- */
+  --surface-light: #f8fafc;         /* Slate 50 */
+  --surface-subtle: #f1f5f9;        /* Slate 100 */
+  --surface-card: #ffffff;
+
+  /* ---------- Supporting Colors ---------- */
+  --muted: #f4f7fb;                 /* Crisp Ice Blue surface */
+  --muted-foreground: #475569;      /* Slate 600 */
+  --border: #e2e8f0;                /* Slate 200 */
+  --border-subtle: #cbd5e1;         /* Slate 300 */
+
+  /* ---------- Layout ---------- */
+  --site-header-height: 72px;
+  --site-container: 1440px;
+}
+
+/* =========================================================
+   TAILWIND THEME MAPPING
+   ========================================================= */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-brand-purple: var(--brand-purple);
+  --color-brand-purple-foreground: var(--brand-purple-foreground);
+
+  --color-cmyk-cyan: var(--cmyk-cyan);
+  --color-cmyk-magenta: var(--cmyk-magenta);
+  --color-cmyk-yellow: var(--cmyk-yellow);
+  --color-cmyk-yellow-hover: var(--cmyk-yellow-hover);
+  --color-cmyk-yellow-foreground: var(--cmyk-yellow-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-surface-light: var(--surface-light);
+  --color-surface-subtle: var(--surface-subtle);
+  --color-surface-card: var(--surface-card);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* =========================================================
+   BASE STYLES & RESPONSIVE CONTAINER
+   ========================================================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--site-header-height);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Responsive Content Container: Expands fluidly up to 1440px with responsive clamp padding */
+.site-container {
+  width: 100%;
+  max-width: var(--site-container);
+  margin-inline: auto;
+  padding-inline: clamp(16px, 3.5vw, 48px);
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  image-rendering: auto;
+}
+
+/* =========================================================
+   SECTIONS & SELECTION
+   ========================================================= */
+
+section[id] {
+  scroll-margin-top: var(--site-header-height);
+}
+
+::selection {
+  background: #dbeafe;
+  color: #0b2076;
+}
+
+/* =========================================================
+   FOCUS / ACCESSIBILITY
+   ========================================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--cmyk-cyan);
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   CONTINUOUS MARQUEE PRODUCT SHOWCASE ANIMATIONS
+   ========================================================= */
+
+@keyframes marquee-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee-left 70s linear infinite;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee-right 76s linear infinite;
+}
+
+.animate-marquee-left-fast {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee-left 34s linear infinite;
+}
+
+.pause-hover:hover {
+  animation-play-state: paused;
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+

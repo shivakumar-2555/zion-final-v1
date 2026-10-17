@@ -1,0 +1,14 @@
+.hero-image{background-image:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.84) 25%,transparent 62%),url('../../public/images/products/clean/synchroline-viper.jpg')}
+.service-one{background-image:url('../../public/images/services/technical-service-support-desk.png')}
+.service-two{background-image:url('../../public/images/services/training-consultation-natural.png')}
+.service-three{background-image:url('../../public/images/services/after-sales-consultation.png')}
+.product-one{background-image:url('../../public/images/products/fitted/plate-mounting-machine.webp')}
+.product-two,.packaging{background-image:url('../../public/images/industries/flexible_packaging.jpg')}
+.product-three,.labels{background-image:url('../../public/images/industries/label_printing.jpg')}
+.product-four{background-image:url('../../public/images/products/fitted/narrow-web-flexo-printing-machine-2-14-colors.png')}
+.product-five{background-image:url('../../public/images/products/fitted/dbfq-370h-slitting-rewinding-machine.png')}
+.product-six{background-image:url('../../public/images/products/fitted/cushion-mounting-tapes-adhesives.png')}
+.industrial{background-image:url('../../public/images/industries/industrial_packaging.jpg')}
+.menu-checkbox{position:absolute;opacity:0;pointer-events:none}
+.menu-toggle{cursor:pointer}
+@media(max-width:680px){#menu-toggle:checked~.nav-links{display:flex}#menu-toggle:checked+.menu-toggle span{font-size:0}#menu-toggle:checked+.menu-toggle span:after{content:'×';font-size:20px}.menu-checkbox:focus-visible+.menu-toggle{outline:2px solid var(--blue);outline-offset:3px}}
