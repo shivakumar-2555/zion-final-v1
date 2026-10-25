@@ -37,15 +37,12 @@ export default function Home() {
       {/* ================= ADVANCED LIGHT HERO SECTION ================= */}
       <section id="home" className="relative isolate flex min-h-[500px] items-center overflow-hidden bg-gradient-to-br from-[#FFFFFF] via-[#F3F7FC] to-[#E5EDF7] py-14 sm:min-h-[540px] lg:min-h-[600px] border-b border-slate-200/80">
         
-        {/* Subtle Engineering Blueprint Grid */}
-        <div className="absolute inset-0 z-0 opacity-[0.035] [background-image:linear-gradient(#0b2076_1px,transparent_1px),linear-gradient(90deg,#0b2076_1px,transparent_1px)] [background-size:40px_40px]" />
-
         {/* Ambient Glows */}
         <div className="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-[#0084D6]/10 blur-3xl pointer-events-none" />
         <div className="absolute top-1/2 right-0 h-96 w-96 rounded-full bg-[#FFC700]/10 blur-3xl pointer-events-none" />
 
-        {/* Floating Machinery Hero Image with Smooth Parallax Float */}
-        <div className="absolute inset-0 z-0 sm:left-[26%] lg:left-[35%]">
+        {/* Floating machinery hero image with a blended edge */}
+        <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95, x: 20 }}
             animate={{ 
@@ -63,16 +60,17 @@ export default function Home() {
             className="relative h-full w-full"
           >
             <Image
-              src="/images/products/clean/synchroline-viper.jpg"
+              src="/images/products/clean/synchroline-viper-feathered.png"
               alt="High-speed flexographic printing press machinery"
               fill
               priority
               sizes="(min-width: 1024px) 70vw, (min-width: 640px) 76vw, 100vw"
-              className="object-contain object-right opacity-95 sm:opacity-100 lg:scale-[1.08]"
+              className="object-contain object-right opacity-90 sm:opacity-100"
             />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#F3F7FC] via-[#F3F7FC]/70 to-transparent" />
           </motion.div>
-          {/* Light Soft Gradient overlay for text legibility */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent sm:via-white/60" />
+          {/* Mobile readability shield */}
+          <div className="pointer-events-none absolute inset-0 bg-white/75 sm:hidden" />
         </div>
 
         <div className="relative z-10 site-container flex min-h-[440px] items-center">
